@@ -1,0 +1,30 @@
+{
+  "name": "mole-rpc-transport-tcp",
+  "version": "0.0.20200416",
+  "main": "mod.js",
+  "files": [
+    "client.js",
+    "client.d.ts",
+    "server.js",
+    "server.d.ts",
+    "mod.js",
+    "mod.d.ts"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "lint": "xo --fix",
+    "test": "node tests/autotest.js"
+  },
+  "dependencies": {
+    "@types/node": "^13.11.1",
+    "mole-rpc": "1.*",
+    "split2": "^3.1.1"
+  },
+  "devDependencies": {
+    "@types/split2": "^2.1.6",
+    "eslint-plugin-simple-import-sort": "^5.0.2",
+    "mole-rpc-autotester": "1.*",
+    "typescript": "^3.8.3",
+    "xo": "^0.29.1"
+  }
+}
