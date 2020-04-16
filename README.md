@@ -1,6 +1,6 @@
 # mole-rpc-transport-tcp
 
-[![Build Status](https://travis-ci.com/yoursunny/node-mole-rpc-transport-tcp.svg?branch=master)](https://travis-ci.com/yoursunny/node-mole-rpc-transport-tcp)
+[![Build Status](https://img.shields.io/travis/com/yoursunny/node-mole-rpc-transport-tcp)](https://travis-ci.com/yoursunny/node-mole-rpc-transport-tcp) [![NPM Release](https://img.shields.io/npm/v/mole-rpc-transport-tcp)](https://www.npmjs.com/package/mole-rpc-transport-tcp)
 
 TCP transport for [mole-rpc](https://www.npmjs.com/package/mole-rpc).
 

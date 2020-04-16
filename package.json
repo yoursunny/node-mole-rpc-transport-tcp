@@ -1,7 +1,14 @@
 {
   "name": "mole-rpc-transport-tcp",
-  "version": "0.0.20200416",
+  "version": "0.0.20200417",
   "license": "ISC",
+  "keywords": [
+    "jsonrpc",
+    "json-rpc",
+    "mole-rpc",
+    "mole-transport",
+    "tcp"
+  ],
   "main": "mod.js",
   "files": [
     "client.js",
