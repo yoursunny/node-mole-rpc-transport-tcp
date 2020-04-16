@@ -1,6 +1,7 @@
 {
   "name": "mole-rpc-transport-tcp",
   "version": "0.0.20200416",
+  "license": "ISC",
   "main": "mod.js",
   "files": [
     "client.js",
