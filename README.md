@@ -1,6 +1,6 @@
 # mole-rpc-transport-tcp
 
-[![Build Status](https://img.shields.io/travis/com/yoursunny/node-mole-rpc-transport-tcp)](https://travis-ci.com/yoursunny/node-mole-rpc-transport-tcp) [![NPM Release](https://img.shields.io/npm/v/mole-rpc-transport-tcp)](https://www.npmjs.com/package/mole-rpc-transport-tcp)
+[![Build Status](https://img.shields.io/travis/com/yoursunny/node-mole-rpc-transport-tcp)](https://travis-ci.com/github/yoursunny/node-mole-rpc-transport-tcp) [![NPM Release](https://img.shields.io/npm/v/mole-rpc-transport-tcp)](https://www.npmjs.com/package/mole-rpc-transport-tcp)
 
 TCP transport for [mole-rpc](https://www.npmjs.com/package/mole-rpc).
 
@@ -17,7 +17,7 @@ const client = new MoleClient({ transport: clientTransport });
 clientTransport.close();
 
 // create server transport
-const serverTransport = new TcpTransportClient({ port: 6653 });
+const serverTransport = new TcpTransportServer({ port: 6653 });
 // create server
 const server = new MoleServer({ transports: [serverTransport] });
 // close server transport

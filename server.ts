@@ -14,7 +14,7 @@ export class TcpTransportServer {
     this.server.listen(this.opts);
     this.server.on("connection", (socket) => {
       socket.pipe(split2("\n")).on("data", (line: string) => {
-        this.callback(line)
+        void this.callback(line)
           .then((reply) => {
             if (typeof reply === "string") {
               socket.write(`${reply}\n`);
