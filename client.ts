@@ -11,8 +11,7 @@ export class TcpTransportClient {
   private callback: OnDataCallback = () => undefined;
   private connecting?: Promise<Socket>;
 
-  constructor(private readonly opts: Options) {
-  }
+  constructor(private readonly opts: Options) {}
 
   private connect(): Promise<Socket> {
     if (!this.connecting) {

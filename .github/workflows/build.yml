@@ -1,0 +1,22 @@
+name: build
+on: [push, pull_request]
+
+jobs:
+  build:
+    runs-on: ubuntu-20.04
+    strategy:
+      matrix:
+        node: ['12', '14', '15']
+      fail-fast: false
+    steps:
+      - uses: actions/checkout@v2
+      - uses: actions/setup-node@v2
+        with:
+          node-version: ${{ matrix.node }}
+      - run: npm install
+      - name: check code style
+        run: |
+          npm run lint
+          [[ $(git status --porcelain | tee >(cat 1>&2) | wc -l) -eq 0 ]]
+      - run: npm run build
+      - run: npm test
